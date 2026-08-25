@@ -132,6 +132,12 @@ export const RESUME_DATA = {
       url: 'https://mk-restorants.netlify.app/',
       desc: 'Dynamic table booking, food catalog & kitchen order ticket management system with zero conflicts.',
     },
+    {
+  name: 'MK Telecom',
+  tech: 'React.js, Tailwind CSS, E-Commerce',
+  url: 'https://mk-telicom.netlify.app/',
+  desc: 'Premium mobile store e-commerce platform with smartphone and accessories catalog, product details, shopping cart, WhatsApp-based order placement, customer order forms, and admin panel.',
+},
   ],
   education: [
     {
