@@ -259,4 +259,35 @@ export const PORTFOLIO_PROJECTS = [
       'Lightweight architecture optimized for rapid loading on low-bandwidth networks',
     ],
   },
+
+  {
+  id: 'mk-telecom',
+  number: '14',
+  title: 'MK Telecom',
+  tagline: 'Premium Mobile Store & E-Commerce Platform',
+  category: 'E-Commerce / Mobile Store',
+  filterCategories: ['all', 'e-commerce', 'business', 'react'],
+  featured: true,
+  imageUrl: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=85',
+  desc: 'Modern mobile store e-commerce platform for browsing smartphones, accessories, and mobile products with product details, shopping cart, customer order forms, WhatsApp order integration, and an admin panel.',
+  tech: [
+    'React.js',
+    'Tailwind CSS',
+    'JavaScript',
+    'HTML5',
+    'CSS3',
+    'Responsive UI',
+    'WhatsApp Integration'
+  ],
+  liveUrl: 'https://mk-telicom.netlify.app/',
+  badge: '★ MOBILE E-COMMERCE',
+  features: [
+    'Complete mobile and accessories product catalog with category-based browsing',
+    'Responsive product listing, product details, cart, and checkout experience',
+    'WhatsApp-based order submission without requiring a payment gateway',
+    'Customer order details including name, mobile number, address, products, and total amount',
+    'Admin panel for managing and monitoring customer orders',
+    'Modern responsive interface optimized for mobile, tablet, and desktop devices'
+  ],
+},
 ];
