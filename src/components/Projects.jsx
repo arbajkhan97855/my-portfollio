@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ExternalLink, Layers, ArrowUpRight, Download, MessageSquare, FolderGit2 } from 'lucide-react';
 import { PORTFOLIO_PROJECTS } from '../data/portfolioData';
 
-export function Projects({ onSelectProject, onDownloadCV }) {
+export function Projects({  onDownloadCV }) {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filterOptions = [
@@ -66,7 +66,7 @@ export function Projects({ onSelectProject, onDownloadCV }) {
               className="rounded-3xl bg-slate-900/90 border border-slate-800 hover:border-indigo-500/40 transition-all duration-300 flex flex-col overflow-hidden group shadow-xl hover:-translate-y-1.5"
             >
               {/* Image Preview Banner */}
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-950 cursor-pointer" onClick={() => onSelectProject(project)}>
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-950 cursor-pointer" >
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -89,11 +89,8 @@ export function Projects({ onSelectProject, onDownloadCV }) {
                   {project.number}
                 </span>
 
-                {/* Hover Click Hint */}
-                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950/85 backdrop-blur-md px-3 py-1.5 rounded-xl border border-white/10 text-xs font-semibold text-slate-200">
-                  <span>Architecture & Features</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-sky-400" />
-                </div>
+              
+             
               </div>
 
               {/* Card Details */}
@@ -113,12 +110,7 @@ export function Projects({ onSelectProject, onDownloadCV }) {
                 <h3 className="text-lg font-extrabold text-slate-100 mb-2 leading-snug group-hover:text-sky-400 transition-colors">
                   {project.title}
                 </h3>
-
-                {/* Description */}
-                <p className="text-xs sm:text-sm text-slate-400 line-clamp-3 mb-5 leading-relaxed flex-1">
-                  {project.desc}
-                </p>
-
+                
                 {/* Tech Pills */}
                 <div className="flex flex-wrap gap-1.5 mb-6">
                   {project.tech.map((t, idx) => (
@@ -146,7 +138,7 @@ export function Projects({ onSelectProject, onDownloadCV }) {
 
                   {/* Architecture Details Modal Button */}
                   <button
-                    onClick={() => onSelectProject(project)}
+                    
                     className="inline-flex items-center justify-center p-2.5 rounded-xl text-xs font-semibold text-slate-300 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-500/40 transition-all"
                     title="Inspect architecture and full feature specs"
                   >

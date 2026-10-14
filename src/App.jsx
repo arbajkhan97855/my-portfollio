@@ -82,7 +82,7 @@ export function App() {
         <Skills />
         <Experience />
         <Projects
-          onSelectProject={(project) => setSelectedProject(project)}
+          
           onDownloadCV={handleDownloadCV}
         />
         <Services />
